@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let userNumber = 0; 
+        do {
+        userNumber = prompt("Introduzca un número")
+        let arrayNumber = Array.from(userNumber.toString()).map(Number)
+        let arrayReverse = [];
+
+        if (userNumber != 0) {
+            for (let i = arrayNumber.length - 1; i >= 0; i--) {
+                arrayReverse.push(arrayNumber[i])
+
+            }
+        } else {
+            console.log(userNumber)
+        }
+        console.log(arrayReverse.join(''))
+        }
+        while (userNumber != 0)
+    </script>
+    <!-- Escribe un programa que muestre el número entero positivo que el usuario 
+introduzca pero al revés (si introduce 1478 que muestre 8741), hasta que el usuario introduzca 0. 
+Si introduce 0 la primera vez, debería mostrarlo al revés (es decir, mostrar 0) y acabar el programa. -->
+</body>
+
+</html>

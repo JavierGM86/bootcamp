@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let contrasena = prompt("Introduce la contraseña.")
+        let tamanocontrasena = contrasena.length
+        let tamano;
+        let number;
+        let mayuscula;
+        let regex = /\d+/;
+        if (tamanocontrasena >= 8) {
+            tamano = true;
+        } else {
+            tamano = false;
+        }
+        if (contrasena.match(regex)) {
+            number = true;
+        } else {
+            number = false;
+        }
+        if (contrasena[0] == contrasena[0].toUpperCase()) {
+            mayuscula = true;
+        } else {
+            mayuscula = false;
+        }
+        if (tamano && number && mayuscula == true){
+            alert("Contraseña correcta")    
+        } else {
+            alert("La contraseña debe contener 8 carácteres o más, incluir números y que la primera letra sea mayúscula.")
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        alert("Por favor, abra la consola con F12")
+        console.log("Calculadora")
+        console.log("1. Suma")
+        console.log("2. Resta")
+        console.log("3. Multiplicación");
+        console.log("4. Potencia")
+        console.log("5. División")
+        console.log("6. Raíz")
+        console.log("7. Salir");
+        let numberA = 0;
+        let numberB = 0;
+        let use = (prompt("Por favor, introduzca el número de la operación que quiera realizar"));
+            if (use == "7"){
+                alert("Gracias por usar la calculadora.")
+            } else if (use == "1"){
+                numberA = parseInt(prompt("Introduzca un número"))
+                numberB = parseInt(prompt("Introduzca otro número"))
+                    console.log(numberA + numberB)
+                } else if (use == "2"){
+                    numberA = parseInt(prompt("Introduzca un número"))
+                    numberB = parseInt(prompt("Introduzca otro número"))
+                    console.log(numberA - numberB)
+                } else if (use == "3"){
+                    numberA = parseInt(prompt("Introduzca un número"))
+                    numberB = parseInt(prompt("Introduzca otro número"))
+                    console.log(numberA * numberB)
+                } else if (use == "4"){
+                    let potencia = 0;
+                    numberA = parseInt(prompt("Introduzca un número"))
+                    numberB = parseInt(prompt("Introduzca otro número"))
+                     console.log(potencia = Math.pow(numberA, numberB));
+                } else if (use == "5"){
+                    numberA = parseInt(prompt("Introduzca un número"))
+                    numberB = parseInt(prompt("Introduzca otro número"))
+                    console.log(numberA / numberB);
+                } else if (use == "6"){
+                    numberA = parseInt(prompt("Introduzca un número"))
+                    numberB = parseInt(prompt("Introduzca otro número"))
+                    console.log(Math.sqrt(numberA), Math.sqrt(numberB));
+                }
+                
+            
+        
+    </script>
+</body>
+<!-- 
+numberA = parseInt(prompt("Introduzca un número"))
+                numberB = parseInt(prompt("Introduzca otro número"))
+
+    Opciones entre 1 y 6: en todos ellos se solicitará introducir dos números por teclado y se realizará la operación matemática indicada por el número de opción de menú.  En pantalla se mostrará lo siguiente:
+
+			Operación seleccionada: nombre operación en texto
+			  Operando1 operación Operando2 = resultado
+			Ejemplo:
+			Operación seleccionada: Suma
+			5+1=6
+
+    Hasta que se pulse el número 7, la calculadora estará ejecutándose constantemente. Una vez realizada 	una operación, el menú volverá a mostrarse para que el usuario pueda seleccionar una nueva opción.
+    Si selecciona la opción 7, el programa terminará.
+
+Si se pulsa un número fuera del rango del 	1 al 7, se mostrará un mensaje por pantalla: Opción 	X no disponible, vuelva a intentarlo.  A continuación, volver a mostrar el menú para que pueda continuar. -->
+
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numero1 = parseInt(prompt("Introduce un número"))
+        let numero2 = parseInt(prompt("Introduce otro número"))
+
+
+       let newNum1 = Math.abs(numero1);
+       let newNum2 = Math.abs(numero2);
+
+       let rem = newNum1 - Math.round( newNum1 / newNum2 ) * newNum2 ;
+
+  console.log(rem)
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    let numberInt = []
+    let numberDec = []
+    let userNumber;
+    //let userNumber = parseFloat(prompt("Introduzca un número"));
+    do{
+    userNumber = parseFloat(prompt("Introduzca un número"));
+    if (userNumber % 1 == 0){
+        numberInt.push(userNumber);
+        console.log(numberInt);
+    } else {
+        numberDec.push(userNumber);
+        console.log(numberDec);
+    }
+    }while (userNumber > 0);
+        //debugger
+        console.log(numberInt.length);
+        console.log(numberDec.length);        
+        let total = 0;
+        for (let i = 0; i <= numberInt.length - 1; i++) {
+            total = total + numberInt[i]
+        }
+            console.log(total)
+        let totalInt = 0;
+        let totalDec = 0;
+        for (let j = 0; j <= numberInt.length - 1; j++) {
+            totalInt = totalInt + numberInt[j];
+        for (let k = 0; k <= numberDec.length - 1; k++) {
+            totalDec = totalDec + numberDec[k];       
+        }
+        }
+        let media = (totalInt + totalDec) / (numberInt.length + numberDec.length)
+        console.log(media)
+
+    </script>
+</body>
+<!-- 
+Lee por consola los números que introduzca el usuario. 
+
+    Si el número introducido es decimal lo guardará en una lista de números decimales,.
+    Si no es decimal entonces los guardará en una lista de ints.  
+
+El programa seguirá pidiendo al usuario que introduzca números hasta que introduzca un número negativo. Una vez haya introducido un número negativo: 
+
+    Muestra cuántos números decimales y cuantos enteros ha creado. 
+    Haz la suma de todos los números enteros introducidos.
+    Saca la media de todos los números, tanto enteros como decimales JUNTOS. -->
+
+
+</html>

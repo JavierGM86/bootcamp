@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let year = parseInt(prompt("Introduzca el año"));
+        debugger;
+            if (year % 4 == 0){
+              if (year % 100 == 0){
+                  if (year % 400 == 0){
+                      console.log(year + " es un año bisiesto");
+                  }else{
+                      console.log(year + " no es un año bisiesto")
+                  }
+              }else{
+                  console.log(year + " es un año bisiesto")
+              }
+            } else {
+                console.log(year + " no es un año bisiesto")
+            }
+                
+
+    </script>
+</body>
+
+
+<!-- 1Si el año es uniformemente divisible por 4, vaya al paso 2. De lo contrario, vaya al paso 5.
+2Si el año es uniformemente divisible por 100, vaya al paso 3. De lo contrario, vaya al paso 4.
+3Si el año es uniformemente divisible por 400, vaya al paso 4. De lo contrario, vaya al paso 5.
+4El año es un año bisiesto (tiene 366 días).
+5El año no es un año bisiesto (tiene 365 días). -->
+
+
+</html>

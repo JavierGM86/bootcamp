@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let temperatura = prompt("¿Cuántos grados hace?")
+        let temperatura1;
+        if (temperatura>40){
+            temperatura1 = 0;
+        }
+            else if (temperatura>30){
+            temperatura1 = 1;    
+            }
+            else if (temperatura>20){
+                temperatura1 = 2;
+            }
+            else if (temperatura>=10){
+                temperatura1 = 3;
+            }
+            else if (temperatura<10){
+                temperatura1 = 4;
+            }
+            switch (temperatura1){
+                case 0:
+                alert("¡Te vas a quemar!")
+                break;
+                case 1:
+                alert("Ponte el ventilador")
+                break;
+                case 2:
+                alert("Pues no se está mal")
+                break;
+                case 3: 
+                alert("Ponte en la estufa")
+                break;
+                case 4:
+                alert("¡Que te congelas!")
+                break;
+                case "sábado":
+                alert("Es fin de semana")
+                break;
+                case "domingo":
+                alert("Es fin de semana")
+                break;
+            }
+
+
+    </script>
+
+</body>
+
+</html>

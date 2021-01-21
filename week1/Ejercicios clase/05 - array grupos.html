@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arrayNames = []
+        let userNames;
+        let grupo = 1;//sirve para decir que grupo es el que pinta
+        let limite = 1;
+        let alumno;
+        do {
+            userNames = (prompt("Introduce el nombre del alumno. Si no quieres introducir más nombres, escribe 'nada'."))
+            if (userNames != "nada") {
+                arrayNames.push(userNames);
+                console.log(arrayNames);
+            }
+        }
+        while (userNames != "nada")
+        let number = parseInt(prompt("Introduce un número para dividir grupos"))
+        let groupNumber = parseInt(arrayNames.length / number)
+        while (arrayNames.length != 0) {
+            if (limite == number + 1) {
+                limite = 1
+            }
+            if (limite == 1) {
+                console.log("Grupo " + grupo);
+                grupo++
+            }
+            if (groupNumber == grupo - 1){
+                grupo = "Personas sin grupo"
+            }
+            limite++;
+            
+            alumno = Math.floor(Math.random() * (arrayNames.length - 0)) + 0;
+            console.log(arrayNames[alumno])
+            arrayNames.splice(alumno, 1)
+        }
+
+    </script>
+</body>
+<!-- 
+Hacer un programa que pida nombres al usuario y los guarde en un array. 
+Cuando el usuario no quiera meter más nombres, que deje de preguntar por nombres y pregunte un número. 
+Ese número será el número de integrantes que formará un grupo. 
+Hacer grupos con todos los usuarios en función del número de integrantes. 
+Si hay alguno descolgado o sin grupo, indicarlo. 
+Los nombres deben ser escogidos de modo aleatorio dentro de ese array. 
+El array debe ir eliminando los nombres que se usen para formar cada grupo -->
+
+
+</html>

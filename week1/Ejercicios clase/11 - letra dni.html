@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      debugger;
+      let resto = 0;
+      var letras = [
+        "T",
+        "R",
+        "W",
+        "A",
+        "G",
+        "M",
+        "Y",
+        "F",
+        "P",
+        "D",
+        "X",
+        "B",
+        "N",
+        "J",
+        "Z",
+        "S",
+        "Q",
+        "V",
+        "H",
+        "L",
+        "C",
+        "K",
+        "E",
+      ];
+      let numberID = parseInt(prompt("Introduzca su número de DNI."));
+      let letterID = prompt("Introduzca la letra de su DNI");
+      let coincide = false;
+      if (numberID < 0 || numberID > 99999999) {
+        alert("Introduzca un número valido");
+      } else {
+        resto = parseInt(numberID % 23);
+        //console.log(resto + 1);
+      }
+      if (letterID == letras[resto]){
+        coincide = true;
+      }
+      if (coincide == true) {
+        console.log("El número y la letra de su DNI son correctos.");
+      } else {
+        console.log("El número y la letra de su DNI no coinciden.");
+      }
+    </script>
+  </body>
+</html>
